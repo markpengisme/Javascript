@@ -5,6 +5,9 @@
     <script type="text/javascript">
       var userName;
       var timeoutHandle;
+      // var clientWindowHeight = window.innerHeight
+      // || document.documentElement.clientHeight
+      // || document.body.clientHeight;
       function touchRock() {
         if (userName) {
           alert("It is good to meet you, " + userName + ".");
@@ -17,12 +20,14 @@
         }
          timeoutHandle = setTimeout("document.getElementById('rockImg').src='rock.png';",5000);
       }
-       
-
+      function resizeRock(){
+        document.getElementById('rockImg').style.height = (window.innerHeight-100)*0.9;
+      }
     </script>
+      
   </head>
 
-  <body onload="alert('Hello, I am your pet rock.');">
+  <body onload="alert('Hello, I am your pet rock.');resizeRock();" onresize="resizeRock()">
     <div style="margin-top:100px; text-align:center">
       <img id="rockImg" src="rock.png" alt="iRock" style="cursor:pointer" onclick="touchRock();" />
     </div>
