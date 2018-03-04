@@ -12,7 +12,7 @@
 - `setTimeout(function,milliseconds)`：定時計時器
 - `clearTimeout(id_of_settimeout)`：清除定時計時器
 - 視窗大小
-    ```
+    ```
 	var clientWindowHeight = window.innerHeight
 	|| document.documentElement.clientHeight
 	|| document.body.clientHeight;
