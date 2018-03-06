@@ -19,3 +19,5 @@
     ```
 - 如果改變image的寬或高另一個有會等比例縮放
 - `<body onload="載入" onresize="調整視窗">`
+- `document.cookie`：cookie
+	- read,write,erase in ch3 cookie.js
