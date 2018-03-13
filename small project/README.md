@@ -21,3 +21,36 @@
 - `<body onload="載入" onresize="調整視窗">`
 - `document.cookie`：cookie
 	- read,write,erase in ch3 cookie.js
+
+### ch4
+```
+if (){
+
+}
+else if (){
+
+}
+	:
+	:
+	:
+else{
+
+}
+```
+```
+switch (X){
+case 'A':
+	...;
+	break;
+	
+case 'B':
+	...;
+	break;
+	
+default:
+	...;
+	break;
+}
+```
+- `/* */`：多行註解
+- `//`：單行註解
